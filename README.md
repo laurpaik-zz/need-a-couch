@@ -8,7 +8,10 @@
 - Sign out
 
 #### Interaction
-- User can send post `need a couch`
+- Send post `need a couch`
+- See other users' posts
+- Update their post
+- Delete their post
 
 <!-- Later, after requirements are met -->
 - User can search for friend <!--(have them search by id first) -->
