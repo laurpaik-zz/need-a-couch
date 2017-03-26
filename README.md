@@ -1,3 +1,9 @@
+# Links
+- [DEPLOYED APP](https://laurpaik.github.io/need-a-couch/)
+- [BACK-END REPO](https://github.com/laurpaik/need-a-couch-api)
+- [DEPLOYED BACK-END](https://salty-earth-68321.herokuapp.com/)
+
+
 # User Stories
 ### User can:
 #### Auth
