@@ -1,19 +1,19 @@
 # User Stories
 ### User can:
 #### Auth
-= Create account
-= Create profile
-= Sign in
-= Change password
-= Sign out
+- Create account
+- Create profile
+- Sign in
+- Change password
+- Sign out
 
 #### Interaction
-- Search for friend <!--(have them search by id first) -->
-- Add friend
-- Accept friend request
-- User can send alert `need a couch`
+- User can send post `need a couch`
 
 <!-- Later, after requirements are met -->
+- User can search for friend <!--(have them search by id first) -->
+- User can add friend
+- User can accept friend request
 - User(in need) can specify “emergency” or “future trip”
 - User(with couch) can respond to alert
 - User(in need) can request Lyft to user(with couch)’s house
