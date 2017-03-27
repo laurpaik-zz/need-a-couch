@@ -15,10 +15,10 @@ export default Ember.Service.extend({
           password_confirmation: credentials.passwordConfirmation,
         },
         profile: {
-          given_name: credentials.given_name,
-          surname: credentials.surname,
-          gender: credentials.gender,
-          dob: credentials.dob,
+          given_name: credentials.given_name || null,
+          surname: credentials.surname || null,
+          gender: credentials.gender || null,
+          dob: credentials.dob || null,
         },
       },
     });
