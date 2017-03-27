@@ -1,0 +1,22 @@
+<form class="form-group" {{action 'save' on='submit'}}>
+  <label for="given_name">Given Name</label>
+  {{input type="text"
+          id="given_name"
+          placeholder="Given Name"
+          value=given_name}}
+  <label for="surname">Surname</label>
+  {{input type="text"
+          id="surname"
+          placeholder="Surname"
+          value=surname}}
+  <label for="gender">Gender</label>
+  {{input type="text"
+          id="gender"
+          placeholder="Gender"
+          value=gender}}
+  <label for="dob">Date of Birth</label>
+  {{input type="date"
+          id="dob"
+          placeholder="Date of Birth"
+          value=dob}}
+</form>

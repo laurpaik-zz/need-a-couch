@@ -14,6 +14,12 @@ export default Ember.Service.extend({
           password: credentials.password,
           password_confirmation: credentials.passwordConfirmation,
         },
+        profile: {
+          given_name: credentials.given_name,
+          surname: credentials.surname,
+          gender: credentials.gender,
+          dob: credentials.dob,
+        },
       },
     });
   },

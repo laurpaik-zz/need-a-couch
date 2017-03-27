@@ -1,6 +1,11 @@
 {{email-input email=credentials.email}}
 {{password-input password=credentials.password}}
 {{password-confirmation-input password=credentials.passwordConfirmation}}
+{{profile-form
+  given_name=credentials.given_name
+  surname=credentials.surname
+  gender=credentials.gender
+  dob=credentials.dob}}
 
 <button type="submit" class="btn btn-primary" {{action "submit"}}>
   Sign Up
