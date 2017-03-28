@@ -2,22 +2,22 @@
   <label for="location">Location</label>
   {{input
     type="text"
-    class="form-control"
+    id="location"
     placeholder="Location"
     value=couchpost.location
   }}
   <label for="date_needed">When do you need the couch?</label>
   {{input
     type="date"
-    class="form-control"
-    value=couchpost.date_needed
+    id="date_needed"
+    value=couchpost.dateNeeded
   }}
   <label for="couch_found">Found a Couch?</label>
   {{input
     type="text"
-    class="form-control"
+    id="couch_found"
     placeholder="found a couch?"
-    value=couchpost.couch_found
+    value=couchpost.couchFound
   }}
   {{input
     type="submit"
