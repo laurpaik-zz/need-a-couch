@@ -1,0 +1,28 @@
+<form class="form-group" {{action 'save' on='submit'}}>
+  <label for="location">Location</label>
+  {{input
+    type="text"
+    class="form-control"
+    placeholder="Location"
+    value=couchpost.location
+  }}
+  <label for="date_needed">When do you need the couch?</label>
+  {{input
+    type="date"
+    class="form-control"
+    value=couchpost.date_needed
+  }}
+  <label for="couch_found">Found a Couch?</label>
+  {{input
+    type="text"
+    class="form-control"
+    placeholder="found a couch?"
+    value=couchpost.couch_found
+  }}
+  {{input
+    type="submit"
+    action='save'
+    value="submit"
+  }}
+</form>
+<button class='btn btn-xs btn-danger' {{action 'cancel'}}>Cancel</button>
