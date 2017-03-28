@@ -1,0 +1,12 @@
+{{#each model as |couchpost|}}
+  {{couchpost-list/post
+    couchpost=couchpost
+  }}
+{{/each}}
+
+{{!-- {{#link-to 'lists.new' class='btn btn-info'}}
+New List
+{{/link-to}}
+<br> --}}
+
+{{#link-to 'index'}}Back{{/link-to}}
