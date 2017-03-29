@@ -13,7 +13,9 @@ Router.map(function () {
   this.route('couchposts', function() {
     this.route('new');
   });
-  this.route('couchpost');
+  this.route('couchpost', { path: '/couchposts/:couchpost_id' }, function() {
+    this.route('edit');
+  });
 });
 
 export default Router;

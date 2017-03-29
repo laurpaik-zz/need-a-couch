@@ -1,6 +1,8 @@
 {{#each model as |couchpost|}}
   {{couchpost-list/couchpost
     couchpost=couchpost
+    edit='editCouchpost'
+    delete='deleteCouchpost'
   }}
 {{/each}}
 {{#link-to 'couchposts.new'}}Post a couch request!{{/link-to}}

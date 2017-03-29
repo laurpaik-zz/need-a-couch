@@ -1,1 +1,3 @@
-Someone needs a couch in {{couchpost.location}} on {{couchpost.dateNeeded}}
+{{couchpost.profile}} needs a couch in {{couchpost.location}} on {{couchpost.dateNeeded}}
+{{#if couchpost.editable}}<button class="btn btn-xs btn-primary" {{action 'edit'}}>Edit</button>
+<button class="btn btn-xs btn-warning" {{action 'delete'}}>Delete</button>{{/if}}
