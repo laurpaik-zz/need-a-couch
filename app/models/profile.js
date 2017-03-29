@@ -5,6 +5,6 @@ export default DS.Model.extend({
   surname: DS.attr('string'),
   gender: DS.attr('string'),
   dob: DS.attr('date'),
-  couchposts: DS.hasMany('couchpost'),
+  couchposts: DS.hasMany('couchpost', { async: true }),
   user: DS.belongsTo('user'),
 });

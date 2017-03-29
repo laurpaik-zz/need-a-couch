@@ -6,6 +6,7 @@ export default Ember.Route.extend({
       couchpost.save()
       .then(() => this.transitionTo('couchposts'));
     },
+
     cancel () {
       history.back();
     }
