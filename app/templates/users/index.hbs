@@ -1,0 +1,6 @@
+{{#each model as |user|}}
+  {{user-list/user
+    user=user
+  }}
+{{/each}}
+{{#link-to 'index'}}Back{{/link-to}}
