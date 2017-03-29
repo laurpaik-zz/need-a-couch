@@ -1,3 +1,14 @@
-{{couchpost.profile}} needs a couch in {{couchpost.location}} on {{couchpost.dateNeeded}}
-{{#if couchpost.editable}}<button class="btn btn-xs btn-primary" {{action 'edit'}}>Edit</button>
-<button class="btn btn-xs btn-warning" {{action 'delete'}}>Delete</button>{{/if}}
+{{#if couchpost.couchFound}}
+  {{couchpost.profile}}found a couch near {{couchpost.location}} for {{couchpost.dateNeeded}}
+  {{#if couchpost.editable}}
+    <button class="btn btn-xs btn-primary" {{action 'editCouchpost'}}>Edit</button>
+    <button class="btn btn-xs btn-warning" {{action 'delete'}}>Delete</button>
+  {{/if}}
+{{/if}}
+{{#unless couchpost.couchFound}}
+  {{couchpost.profile}}needs a couch in {{couchpost.location}} on {{couchpost.dateNeeded}}
+  {{#if couchpost.editable}}
+    <button class="btn btn-xs btn-primary" {{action 'editCouchpost'}}>Edit</button>
+    <button class="btn btn-xs btn-warning" {{action 'delete'}}>Delete</button>
+  {{/if}}
+{{/unless}}
