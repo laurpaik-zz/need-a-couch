@@ -13,16 +13,11 @@
     value=couchpost.dateNeeded
   }}
   <label for="couch_found">Found a Couch?</label>
-  <select type="text" id="couch_found">
-    <option value=false>no</option>
-    <option value=true>yes</option>
-  </select>
   {{input
-    type="number"
-    class="hidden"
-    for="profile_id"
-    id="profile_id"
-    value=couchpost.profileId
+    type="boolean"
+    id="couch_found"
+    value=couchpost.couchFound
+    placeholder="true or false"
   }}
   {{input
     type="submit"
