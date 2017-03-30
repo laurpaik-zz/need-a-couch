@@ -1,14 +1,16 @@
-{{#if couchpost.couchFound}}
-  {{profile.givenName}} {{profile.surname}} found a couch near {{couchpost.location}} for {{couchpost.dateNeeded}}!
-  {{#if couchpost.editable}}
-    {{#link-to 'couchpost.edit' couchpost class="btn btn-xs btn-primary"}} Edit {{/link-to}}
-    <button class="btn btn-xs btn-warning" {{action 'delete'}}>Delete</button>
+<li class="list-group-item">
+  {{#if couchpost.couchFound}}
+    {{profile.givenName}} {{profile.surname}} found a couch near {{couchpost.location}} for {{couchpost.dateNeeded}}!
+    {{#if couchpost.editable}}
+      {{#link-to 'couchpost.edit' couchpost class="btn btn-xs btn-primary"}} Edit {{/link-to}}
+      <button class="btn btn-xs btn-warning" {{action 'delete'}}>Delete</button>
+    {{/if}}
   {{/if}}
-{{/if}}
-{{#unless couchpost.couchFound}}
-  {{profile.givenName}} {{profile.surname}} needs a couch near {{couchpost.location}} on {{couchpost.dateNeeded}}!
-  {{#if couchpost.editable}}
-    {{#link-to 'couchpost.edit' couchpost class="btn btn-xs btn-primary"}} Edit {{/link-to}}
-    <button class="btn btn-xs btn-warning" {{action 'delete'}}>Delete</button>
-  {{/if}}
-{{/unless}}
+  {{#unless couchpost.couchFound}}
+    {{profile.givenName}} {{profile.surname}} needs a couch near {{couchpost.location}} on {{couchpost.dateNeeded}}!
+    {{#if couchpost.editable}}
+      {{#link-to 'couchpost.edit' couchpost class="btn btn-xs btn-primary"}} Edit {{/link-to}}
+      <button class="btn btn-xs btn-warning" {{action 'delete'}}>Delete</button>
+    {{/if}}
+  {{/unless}}
+</li>

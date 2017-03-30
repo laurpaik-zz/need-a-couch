@@ -1,10 +1,12 @@
-{{#each model as |couchpost|}}
-  {{couchpost-list/couchpost
-    couchpost=couchpost
-    profile=couchpost.profile
-    delete='deleteCouchpost'
-  }}
-{{/each}}
+<ul class="list-group">
+  {{#each model as |couchpost|}}
+    {{couchpost-list/couchpost
+      couchpost=couchpost
+      profile=couchpost.profile
+      delete='deleteCouchpost'
+    }}
+  {{/each}}
+</ul>
 {{#link-to 'couchposts.new'}}Post a couch request!{{/link-to}}
 <br/>
 

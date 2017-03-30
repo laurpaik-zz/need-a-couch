@@ -21,10 +21,6 @@
     value=couchpost.couchFound
     placeholder="Leave this blank if you haven't found a couch yet!"
   }}
-  {{input
-    type="submit"
-    action='save'
-    value="submit"
-  }}
+  <button class="btn btn-info" type="submit" action='save' value="submit">Submit</button>
 </form>
 <button class='btn btn-xs btn-danger' {{action 'cancel'}}>Cancel</button>
