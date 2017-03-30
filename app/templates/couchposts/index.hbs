@@ -1,6 +1,7 @@
 {{#each model as |couchpost|}}
   {{couchpost-list/couchpost
     couchpost=couchpost
+    profile=couchpost.profile
     delete='deleteCouchpost'
   }}
 {{/each}}
