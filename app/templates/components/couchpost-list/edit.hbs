@@ -4,6 +4,8 @@
     type="text"
     id="location"
     placeholder="Location"
+    maxlength="20"
+    required="required"
     value=couchpost.location
   }}
   <label for="date_needed">When do you need the couch?</label>
@@ -11,6 +13,7 @@
     type="date"
     id="date_needed"
     value=couchpost.dateNeeded
+    data-provide="datepicker"
   }}
   <label for="couch_found">Found a Couch?</label>
   {{input

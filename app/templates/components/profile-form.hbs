@@ -2,21 +2,25 @@
   <label for="given_name">Given Name</label>
   {{input type="text"
           id="given_name"
+          maxlength="10"
           placeholder="Given Name"
           value=given_name}}
   <label for="surname">Surname</label>
   {{input type="text"
           id="surname"
+          maxlength="10"
           placeholder="Surname"
           value=surname}}
   <label for="gender">Gender</label>
   {{input type="text"
           id="gender"
+          maxlength="10"
           placeholder="Gender"
           value=gender}}
   <label for="dob">Date of Birth</label>
   {{input type="date"
           id="dob"
           placeholder="Date of Birth"
+          data-provide="datepicker"
           value=dob}}
 </form>

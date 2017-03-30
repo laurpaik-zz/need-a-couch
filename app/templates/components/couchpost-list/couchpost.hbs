@@ -6,7 +6,7 @@
   {{/if}}
 {{/if}}
 {{#unless couchpost.couchFound}}
-  {{profile.givenName}} {{profile.surname}} needs a couch near {{couchpost.location}} on {{format-date couchpost.dateNeeded}}!
+  {{profile.givenName}} {{profile.surname}} needs a couch near {{couchpost.location}} on {{couchpost.dateNeeded}}!
   {{#if couchpost.editable}}
     {{#link-to 'couchpost.edit' couchpost class="btn btn-xs btn-primary"}} Edit {{/link-to}}
     <button class="btn btn-xs btn-warning" {{action 'delete'}}>Delete</button>
