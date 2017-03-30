@@ -8,7 +8,12 @@ export default Ember.Route.extend({
   actions: {
     createCouchpost(couchpost) {
       couchpost.save()
-      .then(() => this.transitionTo('couchposts'));
+      .then(() => this.transitionTo('couchposts'))
+      .catch(() => {
+        this.get('flashMessages')
+        .danger('There was a problem. Did you enter a date?');
+      })
+      ;
     },
     cancel () {
       history.back();
