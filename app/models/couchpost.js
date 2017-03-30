@@ -5,6 +5,5 @@ export default DS.Model.extend({
   dateNeeded: DS.attr('date'),
   couchFound: DS.attr('boolean'),
   profile: DS.belongsTo('profile', { async: true }),
-  // profile: DS.attr(),
   editable: DS.attr('boolean'),
 });
