@@ -1,5 +1,5 @@
 {{#if couchpost.couchFound}}
-  {{profile.givenName}} {{profile.surname}} found a couch near {{couchpost.location}} for {{format-date couchpost.dateNeeded}}!
+  {{profile.givenName}} {{profile.surname}} found a couch near {{couchpost.location}} for {{couchpost.dateNeeded}}!
   {{#if couchpost.editable}}
     {{#link-to 'couchpost.edit' couchpost class="btn btn-xs btn-primary"}} Edit {{/link-to}}
     <button class="btn btn-xs btn-warning" {{action 'delete'}}>Delete</button>
