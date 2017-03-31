@@ -13,17 +13,17 @@ see these posts so they will know who to contact if they want to be a good Samar
 - Handlebars
 - Bootstrap
 
-## Development
+# Development
 1. Fork and clone this repository.
 1. Install with `npm install && bower install`
 1. Run the front-end server with `ember server`
-#### Dependencies
+## Dependencies
   - [Webpack](https://webpack.github.io)
   - [Bootstrap](http://getbootstrap.com)
   - [Handlebars.js](http://handlebarsjs.com)
   - [Moment.js](https://momentjs.com/)
 
-## Concept
+# Concept
 Whether it's for a pre-planned trip or for a reckless night, everybody goes through a
 moment when they need to crash somewhere. I always see posts on Facebook asking for
 help from friends for their vacations, and back in college I had a couple friends who
@@ -56,7 +56,7 @@ each day, so I kept to a fairly straightforward schedule. I spent a longer time
 on the front-end than I usually do because I'm not familiar with Ember, but
 ultimately I'm pleased with how this project went.
 
-# Limitations and Complications
+## Limitations and Complications
 I had an adventure learning Ember. I had to frequently reference my paper
 prototype just to figure out how Ember wants components named, which direction
 was "up" vs. "down" when sending data down, actions up, and keeping track of
@@ -67,7 +67,7 @@ persist. I learned a lot more about the serializer's relationship and role
 between the front-end and back-end, and ultimately defining everything clearly
 in the back-end serializer helped me point my data in the right direction.
 
-Ironically, some of my biggest difficulties came with the date. My back-end was
+Some of my biggest difficulties came with the date. My back-end was
 saving dates on my local timezone, but Ember was converting them to GMT. I
 learned that I could solve this by creating a transformer that takes the data
 from the back-end serializer and deserializes it into something that the
@@ -75,7 +75,7 @@ front-end can display. I utilized Moment.js' `moment.utc` to convert the
 dateNeeded to my time-zone and reformatted it to something more appealing for
 users.
 
-# Unsolved problems and Future Goals
+## Unsolved problems and Future Goals
 I definitely want to implement `update` user. Currently, a user can leave a
 form field empty, but there is no way on the front end to update this. I had
 this in my last project because I found that a user could create an account,
