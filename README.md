@@ -176,7 +176,7 @@ something with friendships.
 
 **Pitch Deck Wireframe**
 
-<img src="https://s3.amazonaws.com/laurpaik/wireframe.jpg"height=300px/>
+<img src="https://s3.amazonaws.com/laurpaik/wireframe.jpg" height=300px/>
 
 
 #### Shout outs
