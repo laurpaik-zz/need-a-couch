@@ -180,7 +180,7 @@ something with friendships.
 
 
 #### Shout outs
-- [Rachel](https://github.com/raq929), who helped me understand the structure with Ember and teachind me about adapters
+- [Rachel](https://github.com/raq929), who helped me understand the structure with Ember and taught me about adapters and fielded most of my issues
 - [Jeff](https://github.com/jrhorn424), who helped me understand what Ember actually does for us
 - [Bernard](https://github.com/bernardlee), who helped me with the timezone issue
 - [Sam](https://github.com/Sofistication), who helped me with form clearing and binding issues
