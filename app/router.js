@@ -16,6 +16,10 @@ Router.map(function () {
   this.route('couchpost', { path: '/couchposts/:couchpost_id' }, function() {
     this.route('edit');
   });
+
+  this.route('user', { path: '/users/:profile_id' }, function() {
+    this.route('edit');
+  });
 });
 
 export default Router;

@@ -7,4 +7,5 @@ export default DS.Model.extend({
   dob: DS.attr('date'),
   couchposts: DS.hasMany('couchpost'),
   user: DS.belongsTo('user'),
+  editable: DS.attr('boolean'),
 });

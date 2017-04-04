@@ -1,1 +1,4 @@
 {{user.givenName}} {{user.surname}}
+{{#if user.editable}}
+  {{#link-to 'user.edit' user class="btn btn-xs btn-primary"}} Edit {{/link-to}}
+{{/if}}
