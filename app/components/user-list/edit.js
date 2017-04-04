@@ -5,7 +5,6 @@ export default Ember.Component.extend({
     save () {
       let date = new Date (this.get('profile.dob'));
       this.set('profile.dob', date);
-      console.log(this.get('profile'), 'PROFILE');
       this.sendAction('save', this.get('profile'));
     },
     cancel () {
