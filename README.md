@@ -76,20 +76,10 @@ dateNeeded to my time-zone and reformatted it to something more appealing for
 users.
 
 ## Unsolved problems and Future Goals
-I definitely want to implement `update` user. Currently, a user can leave a
-form field empty, but there is no way on the front end to update this. I had
-this in my last project because I found that a user could create an account,
-but if I required each attribute in profile, the profile creation would catch,
-but the user creation would fulfill. That said, users can only create profiles
-on sign-up, so I needed both to be created no matter what on sign-up. I started
-doing this earlier, but I had binding troubles and I decided to prioritize
-making couchposts CRUDable over profiles, as the whole point of this site is to
-make a couchpost.
-
-After this is done, I need to take some time and study friendships on both the
-back-end and the front-end. I got close to figuring this out on the back-end,
-but again, I decided to prioritize making a complete product over making
-something with friendships.
+I definitely want to implement some kind of friendship feature. I need to take
+some time and study friendships on both the back-end and the front-end. I got
+close to figuring this out on the back-end, but again, I decided to prioritize
+making a complete product over making something with friendships.
 
 ## Paper Prototype
 
