@@ -82,6 +82,14 @@ close to figuring this out on the back-end, but again, I decided to prioritize
 making a complete product over making something with friendships.
 
 ## Paper Prototype
+This shows the different layers of the front-end of my app. Each layer
+represents a route or a component. For example, the large white page is the main
+application route. It shows the path to each file and general basic layout of
+the page. Each "component" also shows the file path and has interchangeable
+"nested components" on them. The post-its represent the nested components.
+Folded up, they show what the user would see, but opened they show the path to
+the necessary files. I referred to this prototype every time I faced a wall or
+got confused about nesting.
 
 *Sign-Up View*
 
