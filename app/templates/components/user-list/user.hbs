@@ -1,12 +1,14 @@
-{{#if user.givenName}}
-{{user.givenName}} {{user.surname}}
-{{#if user.editable}}
-  {{#link-to 'user.edit' user class="btn btn-xs btn-primary"}} Edit {{/link-to}}
-{{/if}}
-{{/if}}
-{{#unless user.givenName}}
-  User {{user.id}}
-  {{#if user.editable}}
-    {{#link-to 'user.edit' user class="btn btn-xs btn-primary"}} Edit {{/link-to}}
+<li class="list-group-item">
+  {{#if user.givenName}}
+    {{user.givenName}} {{user.surname}}
+    {{#if user.editable}}
+      {{#link-to 'user.edit' user class="btn btn-xs btn-primary"}} Edit {{/link-to}}
+    {{/if}}
   {{/if}}
-{{/unless}}
+  {{#unless user.givenName}}
+    User {{user.id}}
+    {{#if user.editable}}
+      {{#link-to 'user.edit' user class="btn btn-xs btn-primary"}} Edit {{/link-to}}
+    {{/if}}
+  {{/unless}}
+</li>
