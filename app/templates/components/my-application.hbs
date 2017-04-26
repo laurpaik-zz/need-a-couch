@@ -6,6 +6,7 @@
       <ul class="nav navbar-nav">
         {{#if isAuthenticated}}
         <li>{{#link-to "users"}}Users{{/link-to}}</li>
+        <li>{{#link-to "couchposts"}}Couchposts{{/link-to}}</li>
         {{/if}}
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -23,7 +24,7 @@
 
 <h1>Need A Couch?</h1>
 {{#unless isAuthenticated}}
-<h3>Please create an account and sign in to tell everyone where you need a couch!</h3>
+<h3>Please create an account and sign in to tell everyone where you need to crash for a night!</h3>
 {{/unless}}
 
 {{#each flashMessages.queue as |flash|}}
@@ -31,8 +32,5 @@
 {{/each}}
 
 <div class="col-md-8 col-md-offset-2">
-  {{#if isAuthenticated}}
-    {{#link-to "couchposts"}}Couchposts{{/link-to}}
-  {{/if}}
   {{outlet}}
 </div>

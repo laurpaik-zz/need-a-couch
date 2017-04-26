@@ -1,6 +1,12 @@
 @import 'bootstrap';
 @import 'bootstrap/theme';
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One');
 
 .btn {
   float: right;
+}
+
+html,
+body {
+  font-family: 'Fredoka One', cursive;
 }
